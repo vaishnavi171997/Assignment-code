@@ -23,6 +23,16 @@ def lineplot(col_a,col_b,col_c,col_d,label_a,label_b,label_c,label_d):
     plt.legend(loc='upper center')
     plt.show()
     
+#defining function for barchart and plotting the graph
+def barchart(col_a,col_b,col_c,col_d,label_a,label_b,title,x_label,y_label):
+    plt.figure(figsize=(10,10))
+    plt.bar(matches[col_a],matches[col_b],width=0.4,label=label_a)
+    plt.bar(matches[col_c],matches[col_d],width=0.3,label=label_b)
+    plt.xlabel(x_label,fontsize=20)
+    plt.ylabel(y_label,fontsize=20)
+    plt.title(title,fontsize=20)
+    plt.legend(prop={'size':16})
+    plt.show()
     
 #defining columns and reading the file
 columns = ['score1','score2','prob1','prob2']
