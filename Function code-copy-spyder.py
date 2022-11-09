@@ -38,7 +38,7 @@ def barchart(col_a,col_b,col_c,col_d,label_a,label_b,title,x_label,y_label):
 def pie_chart(col_a,title,countries):
     plt.figure()
     #countries =['France','Germany','Spain','Norway']
-    plt.pie(matches[col_a],labels=countries)
+    plt.pie(matches[col_a],labels=countries,autopct=('%0.1f%%'))
     plt.title(title)
     plt.legend(loc =2 ,bbox_to_anchor=(1,1.2))
     plt.show()
