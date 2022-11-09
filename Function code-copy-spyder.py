@@ -34,6 +34,15 @@ def barchart(col_a,col_b,col_c,col_d,label_a,label_b,title,x_label,y_label):
     plt.legend(prop={'size':16})
     plt.show()
     
+#defining function for pie chart and plotting the graph 
+def pie_chart(col_a,title,countries):
+    plt.figure()
+    #countries =['France','Germany','Spain','Norway']
+    plt.pie(matches[col_a],labels=countries)
+    plt.title(title)
+    plt.legend(loc =2 ,bbox_to_anchor=(1,1.2))
+    plt.show()
+    
 #defining columns and reading the file
 columns = ['score1','score2','prob1','prob2']
 matches = pd.read_csv('C:\\Users\\HP\\Downloads\\applieddsassignment\\wwc_matches.csv',nrows=4,usecols=columns)
