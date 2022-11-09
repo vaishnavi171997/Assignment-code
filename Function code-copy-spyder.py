@@ -40,3 +40,6 @@ matches = pd.read_csv('C:\\Users\\HP\\Downloads\\applieddsassignment\\wwc_matche
 
 #calling the function for lineplot
 lineplot('score1','score2','prob1','prob2','score1','score2','prob1','prob2')
+
+#calling the function for barchart
+barchart('score1','prob1','score2','prob2','score1','score2','Score of soccer teams','Scores','Probability')
