@@ -68,3 +68,6 @@ barchart('score1','prob1','score2','prob2','score1','score2','Score of soccer te
 
 #calling the function for pie_chart
 pie_chart('score1','Scores of four countries',['France','Germany','Spain','Norway'])
+
+#calling the function for histogram
+histogram('score1','score2','prob1','prob2','score1','score2','Scores and Probability','Records','Histogram depicts Scores and Probability')
