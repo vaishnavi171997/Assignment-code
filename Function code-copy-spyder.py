@@ -43,6 +43,19 @@ def pie_chart(col_a,title,countries):
     plt.legend(loc =2 ,bbox_to_anchor=(1,1.2))
     plt.show()
     
+#defining function for histogram and plotting the graph 
+def histogram(col_a,col_b,col_c,col_d,label_a,label_b,x_label,y_label,title):
+    plt.figure(figsize=(25,8))
+    plt.hist(matches[col_a],bins=20,label=label_a)
+    plt.hist(matches[col_b],bins=20,label=label_b)
+    plt.hist(matches[col_c],bins=5,label='prob1',rwidth=50)
+    plt.hist(matches[col_d],bins=6,label='prob2',rwidth=50)
+    plt.xlabel(x_label,fontsize=20)
+    plt.ylabel(y_label,fontsize=20)
+    plt.legend(prop={'size':16})
+    plt.title(title,fontsize=20)
+    plt.show()
+    
 #defining columns and reading the file
 columns = ['score1','score2','prob1','prob2']
 matches = pd.read_csv('C:\\Users\\HP\\Downloads\\applieddsassignment\\wwc_matches.csv',nrows=4,usecols=columns)
